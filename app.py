@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from utils import *
 from statistics import mean
 import datetime as dt
+import webbrowser
 
 col1, col3 = st.columns(2)
 with col1:
@@ -274,3 +275,6 @@ st.markdown('#')
 st.markdown('#')
 st.markdown('#')
 st.write('Created by Jonathan Lifferth in the lab of Dr. Vito Quaranta')
+src_url = 'https://github.com/QuLab-VU/COATI'
+if st.button('View source code on GitHub'):
+    webbrowser.open_new_tab(src_url)
